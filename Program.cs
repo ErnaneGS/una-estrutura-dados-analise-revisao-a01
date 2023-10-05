@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 
 class Program
 {
@@ -17,7 +17,7 @@ class Program
             Console.WriteLine("Idade inválida. Tente novamente");
         }
 
-        bool cartaoVacinalemDia  = Questionario("Seu cartão de vacina está em dia?");
+        bool cartaoVacinalemDia = Questionario("Seu cartão de vacina está em dia?");
         bool teveSintomasRecentes = Questionario("Teve algum dos sintomas recentemente? (dor de cabeça, febre, náusea, dor articular, gripe)");
         bool teveContatoComPessoainfectada = Questionario("Teve contato com pessoas com sintomas gripais nos últimos dias?");
         bool retornandoDeViagem = Questionario("Está retornando de viagem realizada no exterior?");
@@ -49,7 +49,7 @@ class Program
 
     static double CalcularRisco(bool cartaoVacinalemDia, bool teveSintomasRecentes, bool teveContatoComPessoainfectada, bool retornandoDeViagem)
     {
-         double porcentagem = 0.0;
+        double porcentagem = 0.0;
 
         if (!cartaoVacinalemDia)
             porcentagem += 10.0;
